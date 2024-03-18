@@ -60,7 +60,7 @@
 } 
 
 .premiere-div{
-    background-image: url('../assets/img/image_poignee_main.png')  ;
+    background-image: url('assets/img/image_poignee_main.png')  ;
     background-size:  cover ;
     padding-left: 20px;
     padding-top: 50px;
