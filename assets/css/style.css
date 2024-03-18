@@ -29,7 +29,7 @@
 .header-accueil{
     margin-left: 25px;
     margin-right: 10px ;
-    display: flex;
+    /*! display: flex; */
     justify-content: space-between;
     
     
@@ -43,7 +43,7 @@
     
 }
 .rejoindre{
-    height: 30px;
+    /*! height: 30px; */
     text-decoration: none;
     padding: 10px 20px 20px 20px ;
     margin: 70px 30px 70px 70px ;
@@ -56,6 +56,7 @@
     background: #FF7C32;
     box-shadow: 0px 4px 5px 0px rgba(204, 183, 183, 0.50);
     
+    float: right;
 } 
 
 .premiere-div{
