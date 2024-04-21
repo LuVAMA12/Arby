@@ -1,0 +1,226 @@
+/******************************************************************************************
+VARIABLES 
+******************************************************************************************/
+:root {
+    --couleurOrange:#FF7C32;
+    --couleurBleuViolet:#6268BF;
+    --couleurJauneOrange:#FFCC00;
+ }
+/******************************************************************************************
+GENERALITIES
+******************************************************************************************/
+html {
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+/* color: #2C3338;
+background-color: #FAFAFA; */
+
+
+line-height: 1.5;
+font-family: "Asap", sans-serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+font-variation-settings:
+"wdth" 100;
+}
+
+img {
+    width:100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+}
+.container {
+    max-width: 1300px;
+    margin:0 auto;
+}
+
+/******************************************************************************************
+POLICES (FONTS-SIZE)
+******************************************************************************************/
+
+body {
+    font-size: 1.8rem;
+}
+
+.rejoindre, header nav {
+    font-size: 2rem;
+}
+
+
+h1 {
+    padding-left: 2rem;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h1 span {
+    font-size: 4rem;
+}
+
+/******************************************************************************************
+HEADER
+******************************************************************************************/
+.logo img {
+    margin-left:2rem;
+    max-width:252px;
+}
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:-2rem 2rem ;
+}
+
+.rejoindre {
+    margin-right: 6rem;
+    padding:2rem;
+    background-color: var(--couleurOrange);
+    color:#fff;
+    font-weight: bold;
+    border-radius: 50px;
+    
+}
+
+header nav {
+    
+    border-bottom: 3px solid var(--couleurBleuViolet);
+    padding:1rem 2rem;
+}
+
+
+
+
+/* j'ai plusieurs choix de design pour la navbar et j'hésite */
+header nav ul li a {
+    
+    padding:2rem;
+    /* border-left: 3px solid transparent; */
+    border: 3px solid transparent;
+    
+    transition: border 0.5s;
+}
+
+
+header nav ul li a:hover{
+
+
+    /* soit une bordure orange avec du violet */
+
+    /* border-bottom: 3px solid var(--couleurOrange); 
+    color:var(--couleurBleuViolet);  */
+    
+
+    /* soit l'inverse */
+    /* border-bottom: 3px solid var(--couleurBleuViolet);
+     color: var(--couleurOrange);  */
+      
+
+    /* soit encadré completement */
+    border: 3px solid var(--couleurBleuViolet);
+    color: var(--couleurBleuViolet);
+
+     /*ou en angle */
+    /* border-left: 3px solid var(--couleurBleuViolet);
+    border-bottom: 3px solid var(--couleurBleuViolet); */
+
+    /* ou un fond violet avec du blanc */
+    /* background-color: var(--couleurOrange); 
+     color:#fff; */
+    
+    
+     
+    }
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+/******************************************************************************************
+MAIN
+******************************************************************************************/
+
+.explication div {
+
+    max-width: 49%;
+}
+.texte {
+    padding:2rem;
+    border-radius: 20px;   
+    background-color: var(--couleurBleuViolet);
+    color: #fff;
+}
+
+.intro, .mission{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rejoindre:hover {
+    background-color: #fff;
+    border: 2px solid var(--couleurOrange);
+    color:var(--couleurOrange);
+}
+
+
+.explication img {
+    max-width:355px;
+    display: inline-block;
+    max-height: 174px;
+}
+
+
+.explication {
+    background: url(../img/image_poignee_main.png) center / cover;
+    padding:2rem;
+    
+}
+
+.mission h1 {
+    text-align: center;
+    width:100%;
+    color:var(--couleurBleuViolet);
+}
+
+.mission {
+    justify-content: end;
+    padding: 2rem;
+}
+
+.mission ul {
+    padding-left: 2rem;
+}
+
+.mission figure img {
+    border-radius: 100px;
+}
+/******************************************************************************************
+FOOTER
+******************************************************************************************/
+footer {
+    background-color: var(--couleurOrange);
+    color:#fff;
+}
+
+.explication {
+    color:#fff;
+}
+/******************************************************************************************
+MEDIA QUERIES
+******************************************************************************************/
