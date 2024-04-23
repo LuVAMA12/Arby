@@ -2,9 +2,11 @@
 VARIABLES 
 ******************************************************************************************/
 :root {
-    --couleurOrange:#FF8A47;
-    --couleurBleuViolet:#6268BF;
-    --couleurJauneOrange:#FFCC00;
+    --colorOrange:#FF8A47;
+    --colorBlueViolet:#6268BF;
+    --colorYellowOrange:#FFCC00;
+
+    --borderDefault:20px;
  }
 /******************************************************************************************
 GENERALITIES
@@ -55,6 +57,8 @@ figure {
     margin: 0;
 }
 
+
+
 /******************************************************************************************
 POLICES (FONTS-SIZE)
 ******************************************************************************************/
@@ -76,7 +80,7 @@ h1 {
 }
 
 
-h1 span {
+h1 span, h2 span {
     font-size: 3rem;
 }
 
@@ -88,6 +92,7 @@ li {
     padding:0;
     margin: 0;
 }
+
 
 
 /******************************************************************************************
@@ -110,18 +115,18 @@ header nav a, .rejoindre {
 }
 
 .rejoindre {
-   color:#fff;
-   background-color: var(--couleurOrange);
-   border: 2px solid transparent;
-   padding: 1rem 0;
-   font-weight: bold;
-   border-radius: 100px; 
+    color:#fff;
+    background-color: var(--colorOrange);
+    border: 2px solid transparent;
+    padding: 1rem 0;
+    font-weight: bold;
+    border-radius: 100px; 
 }
 .rejoindre:hover {
-   color: var(--couleurOrange);
-   background-color: #fff;
-   border: 2px solid var(--couleurOrange);
-   
+    color: var(--colorOrange);
+    background-color: #fff;
+    border: 2px solid var(--colorOrange);
+    
 }
 header nav a{
     padding: 0.5rem 0;
@@ -139,19 +144,23 @@ header nav ul li a {
     transition: border 0.5s;
 }
 header nav ul li a:hover{
-    border: 2px solid var(--couleurOrange); 
-    color:var(--couleurBleuViolet);
+    border: 2px solid var(--colorOrange); 
+    color:var(--colorBlueViolet);
 }
 
 main {
     /* margin: 34vh 0 10vh 0 ; */
-    border-top: 3px solid var(--couleurBleuViolet);
+    border-top: 3px solid var(--colorBlueViolet);
     
 }
 
 /******************************************************************************************
 MAIN
 ******************************************************************************************/
+
+/**************************************************************************************
+INDEX.HTML
+**************************************************************************************/
 
 .explication {
     background: url(../img/image_poignee_main.png) center / cover;
@@ -166,8 +175,8 @@ MAIN
 
 .texte {
     padding:2rem;
-    border-radius: 20px;   
-    background-color: var(--couleurBleuViolet);
+    border-radius: var(--borderDefault);    
+    background-color: var(--colorBlueViolet);
     color: #fff;
     text-align: justify;
     
@@ -194,7 +203,7 @@ MAIN
 .mission h1 {
     text-align: center;
     width:100%;
-    color:var(--couleurBleuViolet);
+    color:var(--colorBlueViolet);
 }
 
 .mission ul {
@@ -205,7 +214,7 @@ MAIN
     margin-top: 2rem;
     border-radius: 200rem;
     width: 220px;
-    border: 3px solid var(--couleurJauneOrange);
+    border: 3px solid var(--colorYellowOrange);
     
 }
 
@@ -216,6 +225,61 @@ p {
     margin:0;
 }
 
+/**************************************************************************************
+QUI-SOMMES-NOUS.HTML
+***************************************************************************************/
+/* #who article {
+    padding: 2rem 0;
+} */
+
+#who .background{
+    
+     background-color: var(--colorBlueViolet);
+     /* background-color:  rgba(98, 104, 191, 0.75); */
+color: #fff;
+}
+
+#who h1{
+    color: var(--colorYellowOrange);
+    }
+ #who h2{
+
+    }
+#who h2 {
+    font-size: 1.5em;
+    font-weight: 200;
+    text-align: center;
+   display: block;
+   margin-bottom: 2rem;
+}
+
+#who .card {
+   
+    min-width: 20px;
+    padding: 2rem;
+    border-radius: var(--borderDefault); 
+    /* border:  4px solid black; */
+    background-color:  var(--colorBlueViolet);
+    margin-bottom: 2rem;
+    text-align: justify;
+
+}
+
+
+#who .card img {
+    border-radius: var(--borderDefault); 
+}
+#who .card h3, #who .card em {
+    text-align: center;
+}
+
+ #who .card em {
+    font-size: 1.8rem;
+    /* color: var(--colorBlueViolet); */
+    opacity: 0.75;
+    display: block;
+} 
+
 
 
 /******************************************************************************************
@@ -223,7 +287,7 @@ FOOTER
 ******************************************************************************************/
 
 footer {
-    background-color: var(--couleurOrange);
+    background-color: var(--colorOrange);
     color:#fff;
 }
 
@@ -249,7 +313,7 @@ footer {
     padding: 12px 50px;
     color: #fff;
     border: 2px solid #fff;
-    border-radius: 20px;
+    border-radius: var(--borderDefault); 
     background-color: #ffb589;
     
     
@@ -267,7 +331,7 @@ footer {
 }
 
 .footer .search:hover input+i{
-    color :var(--couleurBleuViolet);
+    color :var(--colorBlueViolet);
     background-color: #fff;
 }
 
@@ -308,27 +372,20 @@ footer{
     right:0;
 } */
 
+
+
 /***************************************************************************************
 MEDIA QUERIES
 ******************************************************************************************/
 
-@media screen and (min-width: 852px) {
+@media screen and (min-width: 500px) {
+    
+    
+    /***  index   ***/
     /* main{
         margin: 18vh 0 10vh;
     } */
-    
-    header nav ul {
-        display:flex;
-        justify-content: space-around;
-        flex-wrap: wrap;     
-    }
-    header nav ul li a {
-        display: inline-block;
-        width:100%;
-        margin:0;
-        padding : 1rem 2rem;
-    }
-   
+
     
     .intro h1 {
         width:100%;
@@ -371,7 +428,36 @@ MEDIA QUERIES
     width : 50%;
   }
   
- 
+  /***  qui-sommes-nous   ***/
+   #who .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   }
+   #who .card{
+    min-width: 50px;
+    margin:0.5rem;
+    width: calc(95%/4);
+}
+
+#who .cards h2 {
+    width: 100%;
+}
+}
+@media screen and (min-width: 852px) {
+
+    header nav ul {
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;     
+    }
+    header nav ul li a {
+        display: inline-block;
+        width:100%;
+        margin:0;
+        padding : 1rem 2rem;
+    }
+      
 }
 
 @media screen and (min-width: 1245px) {
@@ -396,9 +482,6 @@ MEDIA QUERIES
     footer aside {
         width: 25%;
       }
-
-    
-    
 
     
 }
